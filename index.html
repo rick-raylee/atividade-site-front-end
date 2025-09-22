@@ -334,6 +334,46 @@
             position: relative;
             z-index: 1;
         }
+        /* Estilos para a página de contato */
+        
+        .contato-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: linear-gradient(135deg, #0f3460, #16213e);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .contato-container h2 {
+            color: #4ecca3;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+        .contato-container h3 {
+            color: #4ecca3;
+            margin: 30px 0 15px;
+        }
+        
+        .contato-info {
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        
+        .contato-info p {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .contato-info p:before {
+            content: "•";
+            color: #4ecca3;
+            position: absolute;
+            left: 0;
+        }
         /* Responsividade */
         
         @media (max-width: 768px) {
@@ -386,6 +426,10 @@
                 width: 100%;
                 height: 250px;
             }
+            .contato-container {
+                margin: 20px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -413,15 +457,12 @@
         </div>
     </header>
 
-
     <main>
         <section class="banner">
             <img src="assets/fundo.png" alt="Banner TechGame" class="banner-img">
             <div class="banner-texto">
                 <h1>Bem-vindo à TechGame</h1>
-                <p>
-                    <B>Os melhores periféricos gamers e produtos para você</p></B>
-
+                <p><b>Os melhores periféricos gamers e produtos para você</b></p>
             </div>
         </section>
 
@@ -490,7 +531,6 @@
                 <div class="produtos-lista">
                     <div class="produto">
                         <img src="assets/hedset1.png" alt="Headset Gamer">
-
                         <h4>Headset 7.1 Surround</h4>
                         <p>Headset com som surround e microfone retrátil</p>
                         <p class="preco">R$ 349,90</p>
@@ -564,14 +604,12 @@
             <div class="beneficios-texto">
                 <h2>Por que comprar na TechGame?</h2>
                 <ul>
-                    <li><b> grátis para todo o Brasil em compras acima de R$ 299,00</b></li>
+                    <li><b>Frete grátis para todo o Brasil em compras acima de R$ 299,00</b></li>
                     <li><b>Garantia estendida em todos os produtos</b></li>
                     <li><b>Parcele em até 10x sem juros</b></li>
-                    <li><b>Atendimento especializado</b>
-                        <li>
-                            <li><b>Trocas e devoluções em até 30 dias</b></li>
-                            <li><b>Programa de fidelidade com descontos progressivos 
-                            </b></li>
+                    <li><b>Atendimento especializado</b></li>
+                    <li><b>Trocas e devoluções em até 30 dias</b></li>
+                    <li><b>Programa de fidelidade com descontos progressivos</b></li>
                 </ul>
             </div>
         </section>
@@ -634,91 +672,4 @@
         });
     </script>
 </body>
-
-
-
-
-
-
-<title>Contato - TechGame</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
-        color: #f8eeee;
-    }
-    
-    header {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    h1 {
-        color: #2c3e50;
-    }
-    
-    .description {
-        margin-top: 20px;
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-    
-    .contact-info {
-        margin-top: 20px;
-        font-size: 1.1em;
-    }
-    
-    .contact-info p {
-        margin: 10px 0;
-    }
-    
-    .redirect {
-        margin-top: 30px;
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        display: inline-block;
-    }
-    
-    .redirect:hover {
-        background-color: #2980b9;
-    }
-</style>
-
-
-
-
-<header>
-    <h1>TechGame - Loja de Games e Periféricos</h1>
-</header>
-
-<div class="container">
-    <a href="index.html" class="redirect">Voltar para a Home</a>
-    <h2>Contato</h2>
-    <p>Entre em contato conosco para dúvidas, sugestões ou para saber mais sobre nossos produtos!</p>
-
-    <div class="description">
-        <h3>Sobre a TechGame</h3>
-        <p>A TechGame é uma loja especializada na venda de produtos para gamers, oferecendo desde consoles e jogos até periféricos como teclados, mouses, headsets e muito mais. Com preços competitivos e uma vasta gama de opções, nós garantimos qualidade
-            e um ótimo atendimento ao cliente.</p>
-    </div>
-
-    <div class="contact-info">
-        <p><strong>Telefone:</strong> (11) 91234-5678</p>
-        <p><strong>CNPJ:</strong> 12.345.678/0001-99</p>
-    </div>
-
-
 </html>
