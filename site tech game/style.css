@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.cabecalho {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.cabecalho nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.cabecalho nav li {
+    margin: 0 10px;
+}
+
+.cabecalho nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.cabecalho nav a:hover {
+    color: #ff6b00;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.logo-rodape {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        margin: 0 0 15px 0;
+    }
+    .cabecalho nav ul {
+        flex-direction: column;
+        margin: 0;
+    }
+    .cabecalho nav li {
+        margin: 5px 0;
+    }
+    body {
+        background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    }
+}

@@ -1,0 +1,375 @@
+/* style-home.css - Estilos específicos para a página inicial */
+
+
+/* Banner principal */
+
+.banner {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    width: 80%;
+}
+
+.banner-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.banner-texto p {
+    font-size: 1.2rem;
+}
+
+
+/* Seção de categorias */
+
+.categorias {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.categorias h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.categorias h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #ff6b00;
+}
+
+.categoria-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.categoria-btn {
+    padding: 12px 25px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.categoria-btn.active {
+    background-color: #ff6b00;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 107, 0, 0.3);
+}
+
+
+/* Seção de produtos em destaque */
+
+.produtos-destaque {
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.categoria-produtos {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.categoria-produtos.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.categoria-produtos h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.categoria-produtos h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #ff6b00;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.produto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.produto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff6b00, #ff922b);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.produto:hover::before {
+    transform: scaleX(1);
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover img {
+    transform: scale(1.05);
+}
+
+.produto h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.produto p {
+    margin-bottom: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.preco {
+    font-weight: bold;
+    color: #ff6b00 !important;
+    font-size: 1.3rem;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* Seção de benefícios */
+
+.beneficios {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios-texto {
+    flex: 1;
+}
+
+.beneficios-texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.beneficios-texto h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ff6b00;
+}
+
+.beneficios-texto ul {
+    margin-left: 20px;
+}
+
+.beneficios-texto li {
+    margin-bottom: 12px;
+    list-style-type: disc;
+    color: #555;
+    line-height: 1.6;
+    padding-left: 5px;
+}
+
+
+/* Estilos responsivos */
+
+@media (max-width: 992px) {
+    .banner-texto h1 {
+        font-size: 2rem;
+    }
+    .banner-texto p {
+        font-size: 1.1rem;
+    }
+    .categoria-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-texto h1 {
+        font-size: 1.8rem;
+    }
+    .banner-texto p {
+        font-size: 1rem;
+    }
+    .beneficios {
+        flex-direction: column;
+    }
+    .beneficios-img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .categoria-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .categoria-btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .produtos-lista {
+        gap: 20px;
+    }
+    .produto {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-texto {
+        width: 90%;
+    }
+    .banner-texto h1 {
+        font-size: 1.5rem;
+    }
+    .categorias h2 {
+        font-size: 1.6rem;
+    }
+    .categoria-produtos h3 {
+        font-size: 1.5rem;
+    }
+    .beneficios {
+        padding: 20px;
+    }
+    .beneficios-texto h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Animações extras */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.produto:hover .preco {
+    animation: pulse 1s infinite;
+}
+
+
+/* Melhorias de acessibilidade */
+
+.categoria-btn:focus {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
+
+.produto:focus-within {
+    outline: 2px solid #ff6b00;
+    outline-offset: 2px;
+}
